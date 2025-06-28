@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'montressat',sans-serif;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #fff;
+	background-color: rgb(14, 14, 69);
+}
+
+
+header{
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+header .baslik, .new-task-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textinput{
+    margin-right: 1rem;
+    background-color: #ecececec;
+}
+.textsubmit{
+    background: linear-gradient(to bottom right, aqua, green);
+    color: #fff;
+}
+.new-task-form .textinput, .textsubmit{
+        padding: 1rem;
+        border-radius: 1rem;
+        outline: none;
+        border: none;
+
+}
+
+input{
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+main{
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 1rem;
+    }
+
+.task-list .task{
+	display: flex;
+	justify-content: space-between;
+	background-color: black;
+	padding: 1rem;
+	border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task .content{
+	flex: 1 1 0%;
+    background: transparent;
+
+}
+
+.task .content .text{
+	color: var(--light);
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+}
+
+.task .actions{
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions i{
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.5rem;
+	transition:0.4s;
+	-webkit-transition:0.4s ;
+	-moz-transition:0.4s ;
+	-ms-transition:0.4s ;
+	-o-transition:0.4s ;
+}

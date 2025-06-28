@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f6f7fb;
+}
+
+.container{
+    background: #fff;
+    padding: 2rem 7rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.result-images{
+    display: flex;
+    column-gap: 7rem;
+}
+
+
+.container.start .user-images{
+    animation: userShake 0.5s ease infinite;
+    -webkit-animation: userShake 0.5s ease infinite;
+}
+
+@keyframes userShake {
+    50%{
+        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
+    }
+}
+
+.container.start .cpu-images{
+    animation: cpuShake 0.5s ease infinite;
+    -webkit-animation: cpuShake 0.5s ease infinite;
+}
+
+@keyframes cpuShake {
+    50%{
+        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
+    }
+}
+
+
+.result-images img{
+    width: 250px;
+}
+
+.cpu-images img{
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+}
+
+.result{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    font-weight: 700;
+    color: #023047;
+}
+
+.option-images{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2.5rem;
+}
+
+.option-image{
+    width: 80px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.option-image img{
+    pointer-events: none;
+    width: 80px;
+}
+
+.option-image:hover{
+    opacity: 1;
+}
+
+.option-image.active{
+    opacity: 1;
+}
+
+.option-image p{
+    text-align: center;
+    font-size: 1.1rem;
+    color: #023047;
+    font-weight: 500;
+}
