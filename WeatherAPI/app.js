@@ -1,5 +1,5 @@
 const url = "https://api.openweathermap.org/data/2.5/";
-const key = "a01ff81242fd8fcf61b81bf132892175";
+const key = "paste_key_here";
 
 const searchEvent = (e) => {
     if (e.code === "Enter") {
