@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(17, 45, 65);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: rgb(194, 195, 173);
+    width: 80vw;
+    padding: 3rem;
+    border-radius: 1.75rem;
+    box-shadow: 0 20px 25px rgb(11, 30, 44);
+}
+.search-container{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.4rem;
+}
+.search-container input{
+    background-color: transparent;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    color: #333;
+    border-bottom: 2px solid rgb(17, 45, 65);
+}
+.search-container input::placeholder{
+    color:#333;
+}
+.search-container button{
+    font-size: 1.2rem;
+    background-color: rgb(17, 45, 65);
+    border: none;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    color: #efefefef;
+    font-weight: 200;
+    cursor: pointer;
+    transition:all 0.2s ease ;
+}
+.search-container button:hover{
+    background-color: #1b3e57;
+}
+.container .dataContainer{
+    margin-bottom: 1rem;
+}
+
+.container .flagImg{
+    display: block;
+    width: 40%;
+    min-width: 7.5rem;
+    margin: 1.8rem auto 1.2rem;
+    box-shadow: 8px 10px 15px rgba(0,0,0,0.1);
+}
+
+.container h2{
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+}
+
+.dataContainer h4{
+    margin-bottom: 1rem;
+    letter-spacing: 0.3px;
+    color: #333;
+    font-size: 2rem;
+    font-weight: 700;
+    display: inline;
+}
+
+
+.container span{
+    font-weight: 400;
+    color: #333;
+    font-size: 1.7rem;
+    margin-left: 1rem;
+}
+
+.container h3{
+    color: #ff465a;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
