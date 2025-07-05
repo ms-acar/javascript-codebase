@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(135deg, #e33d51,#4d0606);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: rgb(20, 49, 72);
+    width: 80vw;
+    padding: 3rem;
+    border-radius: 1.75rem;
+    box-shadow: 0 20px 25px rgb(11, 30, 44);
+}
+.search-container{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.4rem;
+}
+.search-container input{
+    background-color: transparent;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    color: #efefefef;
+    border-bottom: 1px solid #efefefef;
+}
+.search-container input::placeholder{
+    color:#efefefef;
+}
+.search-container button{
+    font-size: 1.2rem;
+    background-color: #e33d51;
+    border: none;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    color: #efefefef;
+    font-weight: 200;
+    cursor: pointer;
+    transition:all 0.2s ease ;
+}
+.search-container button:hover{
+    background-color: #691414;
+}
+.text{
+    color: #efefefef;
+    margin-top: 1rem;
+}
+.info{
+    color: #efefefef;
+    position: relative;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+.poster{
+    width: 60%;
+}
+h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.06rem;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    margin: 0.6rem 0 0.9rem 0;
+}
+.rating img{
+    width: 1.25rem;
+}
+.details{
+    /* display: grid;
+    grid-template-columns: 4fr 4fr 4fr; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.details span{
+        border: 1px solid #efefefef;
+        padding: 0.4rem;
+        border-radius: 0.4rem;
+}
+.genre{
+    margin-top: 1rem;
+}
+.alert{
+    text-align: center;
+    color: #efefefef;
+}
+/* <div class="info">
+<img src="${movieData.Poster}" class="poster">
+<div>
+    <h2>${movieData.Title}</h2>
+    <div class="rating">
+        <img src="images/star.svg">
+        <h4>${movieData.imdbRating}</h4>
+    </div>
+    <div class="details">
+        <span>${movieData.Rated}</span>
+        <span>${movieData.Year}</span>
+        <span>${movieData.Runtime}</span>
+    </div>
+    <div class="genre">
+        <div>${movieData.Genre.split(",").join("<div></div>")}</div> 
+    </div>
+</div>
+</div>
+<h3>Plot:</h3>
+<p>${movieData.Plot}</p>
+<h3>Cast:</h3>
+<p>${movieData.Actors}</p>
+` */
